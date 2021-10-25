@@ -7,4 +7,5 @@ Hi! This is my first web app, it is a simple Newsletter system contected to a **
 
 # App Diagram 
 This is an schematized diagram of how the app is going to be working, sending customers data to the database and connecting it to the CRUD page and the email bulksend page for the web owner:
+
 ![App Diagram](https://www.linkpicture.com/q/Copia-de-newsletter.drawio.png)
