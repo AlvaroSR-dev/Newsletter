@@ -17,21 +17,60 @@
         crossorigin="anonymous"></script>
 </head>
 
-<body>
+<body style="background-color: #ccc">
     <h1 class="text-center p-5">Newsletter</h1>
 
-    <div class="card">
-        <form action="connect.php" method="POST" enctype="multipart/form-data">
+    <div class="card mx-auto" style="width: 400px; height: auto;">
+        <h2 class="text-center" style="margin-top: 20px;">Subscribe to our Newsletter</h2>
+        <p class="text-center">Don´t miss our best deals and news!</p>
+        <div style="padding-left: 75px">
+            <form class="mx-auto" style="width: 400px;" action="connect.php" method="POST"
+                enctype="multipart/form-data">
+                <div class="mb-3">
+                    <label for="name" class="form-label">Name</label><br />
+                    <input type="text" id="name" name="name" placeholder="Name" class="mx-auto" required
+                        style="width: 250px;" />
+                </div>
+
+                <div class="mb-3">
+                    <label for="surname" class="form-label">Surname</label><br />
+                    <input type="text" id="surname" name="surname" placeholder="Surname" class="mx-auto"
+                        style="width: 250px;" />
+                </div>
+
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label><br />
+                    <input type="text" id="email" name="email" placeholder="Email" class="mx-auto"
+                        style="width: 250px;" />
+                    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                </div>
+
+                <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Accept our <a>Terms & Conditions</a>.</label>
+                </div>
+        </div>
+        <button type="submit" class="btn btn-primary mx-auto" style="margin-bottom: 15px">Submit</button>
+        </form>
+
+    </div>
+
+
+</body>
+
+</html>
+
+<!--
+    <form action="connect.php" method="POST" enctype="multipart/form-data">
             <h2 class="text-center">Subscribe to our Newsletter</h2>
             <p class="text-center">Don´t miss our best deals and news!</p>
             <div>
-                <input type="text" id="name" name="name" placeholder="Name" class="mx-auto" required style="width: 250px;" />
-                <input type="text" id="surname" name="surname" placeholder="Surname" class="mx-auto" style="width: 250px;" />
+                <input type="text" id="name" name="name" placeholder="Name" class="mx-auto" required
+                    style="width: 250px;" />
+                <input type="text" id="surname" name="surname" placeholder="Surname" class="mx-auto"
+                    style="width: 250px;" />
                 <input type="text" id="email" name="email" placeholder="Email" class="mx-auto" style="width: 250px;" />
                 <input type="submit" value="Submit" id="send" class="btn btn-primary" class="mx-auto" />
             </div>
         </form>
-    </div>
-</body>
-
-</html>
+-->
